@@ -6,6 +6,7 @@
     --primary-color: #130f0d;
     --secondary-color: #551f22;
     --primary-text-color:#c4c1b8;
+    --icon-colors:#635b51;
 }
 
 /**/
@@ -66,10 +67,9 @@ header{
 /**/
 .header2{
     display: grid; 
-    
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     gap: 5rem;
-    padding: 0 2rem;
+    padding: 0 20rem;
 }
 
 .chat1, .chat2, .chat3, .chat4, .chat5, .chat6{
@@ -86,7 +86,7 @@ header{
     display: grid;
     color: var(--primary-text-color);
     gap: 0.25rem;
-    padding-top: 1rem;
+    padding-top: 4rem;
 }
 
 .bigpicture{
@@ -104,17 +104,31 @@ header{
 }
 
 .nextpictures{
-    display: grid;
-    
+    display: flex;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     gap: 0.5rem;
+    padding: 0 20rem;
 }
 .nextpictures-1, .nextpictures-2, .nextpictures-3, .nextpictures-4, .nextpictures-5{
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: var(--primary-color);
-    height: clamp(10px, 5vh, 50px);  
-    width: clamp(10px, 5vh, 50px);
+    height: clamp(10px, 10vh, 100px);  
+    width: clamp(10px, 10vh, 100px);
     
+}
+
+.searchbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 0;
+}
+.searchbar a{
+    background-color: var(--icon-colors);
+    padding: 1.5rem 20rem;
+    border-radius: 30px;
+    text-decoration: none;
+    color: var(--primary-text-color);
 }
