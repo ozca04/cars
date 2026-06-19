@@ -66,7 +66,7 @@ header{
 /**/
 .header2{
     display: grid; 
-    align-items: center;
+    
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     gap: 5rem;
     padding: 0 2rem;
@@ -82,3 +82,39 @@ header{
 /**/
 /**/
 
+.adbar{
+    display: grid;
+    color: var(--primary-text-color);
+    gap: 0.25rem;
+    padding-top: 1rem;
+}
+
+.bigpicture{
+    display: grid;
+    padding: 0 20rem;
+}
+
+.bigpictureimg{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-color);
+    height: clamp(100px, 40vh, 400px);  
+    font-size: 5rem;
+}
+
+.nextpictures{
+    display: grid;
+    
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 0.5rem;
+}
+.nextpictures-1, .nextpictures-2, .nextpictures-3, .nextpictures-4, .nextpictures-5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-color);
+    height: clamp(10px, 5vh, 50px);  
+    width: clamp(10px, 5vh, 50px);
+    
+}
