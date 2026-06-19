@@ -7,6 +7,7 @@
     --secondary-color: #551f22;
     --primary-text-color:#c4c1b8;
     --icon-colors:#635b51;
+    --secondary-text-color:#301415;
 }
 
 /**/
@@ -118,7 +119,8 @@ header{
     width: clamp(10px, 10vh, 100px);
     
 }
-
+/**/
+/**/
 .searchbar{
     display: flex;
     justify-content: center;
@@ -131,4 +133,91 @@ header{
     border-radius: 30px;
     text-decoration: none;
     color: var(--primary-text-color);
+}
+/**/
+/**/
+
+.recommendation-title{
+    display: flex;
+    padding: 0 20rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 500px;
+    font-size: 1.5rem;
+    color: var(--secondary-text-color);
+}
+
+/**/
+/**/
+
+.recommendation-boxes{
+    display: grid;
+    gap: 2rem;
+    color: var(--primary-text-color);
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 1rem 20rem;
+}
+
+
+
+.container-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--secondary-color);
+    height: 250px;
+    width: 250px;
+    border-radius: 15px;
+    font-size: 2rem;
+}
+
+.container-text-name {
+    color: var(--secondary-text-color);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.container-text-info{
+    color: var(--secondary-text-color);
+    font-size: 0.80rem;
+    font-family: 'Inter', sans-serif;
+}
+.container-text-price{
+    color: var(--secondary-text-color);
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+/**/
+/**/
+
+footer{
+    padding: 5rem 20rem;
+}
+
+.footercontainer{
+    display: grid;
+    align-items: center;
+    gap: 10rem;
+    grid-template-columns: 1fr 4fr;
+    color: var(--primary-text-color);
+    background-color: var(--icon-colors);
+    height: clamp(100px, 20vh, 200px);
+    width: 60rem;
+    padding: 0 4rem;
+}
+.footerlogo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-color);
+    height: clamp(60px, 8vh, 100px);
+}
+.footerstuff{
+    display: flex;
+    gap: 10rem;
+    color: var(--primary-text-color);
+    font-family: 'Inter';
+    font-size: large;
+   
 }
