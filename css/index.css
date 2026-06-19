@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+}
+/**/
+header{
+    gap: 0.25rem;
+    display: grid; 
+    align-items: center;
+}
+.header1{
+    display: grid; 
+    align-items: center;
+    grid-template-columns: 1fr 3fr 2fr;
+    gap: 2rem;
+}
+
+
+
+.header-1_1, .header-1_2, .header-1_3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: clamp(25px, 4vh, 50px) ;
+    background-color: palevioletred;   
+}
+
+/**/
+/**/
+.header2{
+    display: grid; 
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 5rem;
+}
+
+.chat1, .chat2, .chat3, .chat4, .chat5, .chat6{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: clamp(10px, 2vh, 25px) ;
+    background-color: saddlebrown;   
+}
+/**/
+/**/
+
