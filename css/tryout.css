@@ -1,0 +1,16 @@
+header{
+    display: grid; 
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+}
+
+.header-1, .header-2, .header-3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: clamp(50px, 4vh, 100px) clamp(50px, 33vw, 200px);
+    background-color: palevioletred;
+    
+}
+
