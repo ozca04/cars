@@ -10,77 +10,7 @@
     --secondary-text-color:#301415;
 }
 
-/**/
-header{
-    gap: 0.25rem;
-    display: grid; 
-    color: var(--primary-text-color);
-}
 
-
-/**/
-.header1{
-    display: grid; 
-    grid-template-columns: 1fr 1fr 2fr;
-    gap: 5rem;
-    padding: 0 20rem;
-}
-
-.header-1_1, .header-1_3{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: clamp(60px, 8vh, 100px);
-    padding: 0 1rem;
-    background-color: var(--primary-color);  
-    overflow: hidden;  
-    font-size: 1rem;
-}
-.header-1_2{    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: clamp(60px, 8vh, 100px);
-    padding: 0 1rem;
-    background-color: white;
-
-}
-
-.header-1_3 {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-.favorites, .myaccount, .notification{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-}
-
-
-.header-1_3 a{
-    text-decoration: none;
-    color: var(--primary-text-color);
-    
-}
-
-/**/
-/**/
-.header2{
-    display: grid; 
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    gap: 5rem;
-    padding: 0 20rem;
-}
-
-.chat1, .chat2, .chat3, .chat4, .chat5, .chat6{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: clamp(10px, 2vh, 25px) ;
-    background-color: var(--secondary-color);   
-}
-/**/
 /**/
 
 .adbar{
@@ -92,7 +22,7 @@ header{
 
 .bigpicture{
     display: grid;
-    padding: 0 20rem;
+    padding: 0 clamp(1rem, 5vw, 20rem);
 }
 
 .bigpictureimg{
@@ -106,9 +36,8 @@ header{
 
 .nextpictures{
     display: flex;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     gap: 0.5rem;
-    padding: 0 20rem;
+    padding: 0 clamp(1rem, 5vw, 20rem);
 }
 .nextpictures-1, .nextpictures-2, .nextpictures-3, .nextpictures-4, .nextpictures-5{
     display: flex;
@@ -124,12 +53,14 @@ header{
 .searchbar{
     display: flex;
     justify-content: center;
+    
     align-items: center;
     padding: 5rem 0;
+    
 }
 .searchbar a{
     background-color: var(--icon-colors);
-    padding: 1.5rem 20rem;
+    padding: 1.5rem clamp(1rem, 20vw, 20rem);
     border-radius: 30px;
     text-decoration: none;
     color: var(--primary-text-color);
@@ -139,9 +70,9 @@ header{
 
 .recommendation-title{
     display: flex;
-    padding: 0 20rem;
+    padding: 0 clamp(1rem, 5vw, 20rem);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight: 500px;
+    font-weight: 500;
     font-size: 1.5rem;
     color: var(--secondary-text-color);
 }
@@ -155,7 +86,7 @@ header{
     color: var(--primary-text-color);
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    padding: 1rem 20rem;
+    padding: 1rem clamp(1rem, 5vw, 20rem);
 }
 
 
@@ -189,35 +120,3 @@ header{
     font-size: 1.5rem;
 }
 /**/
-/**/
-
-footer{
-    padding: 5rem 20rem;
-}
-
-.footercontainer{
-    display: grid;
-    align-items: center;
-    gap: 10rem;
-    grid-template-columns: 1fr 4fr;
-    color: var(--primary-text-color);
-    background-color: var(--icon-colors);
-    height: clamp(100px, 20vh, 200px);
-    width: 60rem;
-    padding: 0 4rem;
-}
-.footerlogo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--primary-color);
-    height: clamp(60px, 8vh, 100px);
-}
-.footerstuff{
-    display: flex;
-    gap: 10rem;
-    color: var(--primary-text-color);
-    font-family: 'Inter';
-    font-size: large;
-   
-}

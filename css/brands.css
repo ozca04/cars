@@ -1,0 +1,54 @@
+:root {
+    --primary-color: #130f0d;
+    --secondary-color: #551f22;
+    --primary-text-color:#c4c1b8;
+    --icon-colors:#635b51;
+    --secondary-text-color:#301415;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 3fr 7fr;
+}
+
+.left-section{
+    display: grid;
+    grid-row: 1fr 9fr;
+    gap: 5rem;
+    padding: 5rem clamp(1rem, 5vw, 20rem);
+}
+
+.search-bar{
+    display: flex;
+    justify-content: start;
+    align-items: end;
+    background-color: var(--secondary-color);
+    padding: clamp(1rem, 4vh, 2rem);
+    border-radius: 25px;
+}
+/**/
+/**/
+.brands{
+    background-color: var(--secondary-color);
+    border-radius: 15px;
+}
+
+details{
+    display: grid;
+    gap: 1rem;
+    padding: 1rem 2rem;
+}
+
+.box-styling{
+    display: grid;
+    gap: 0.5rem;
+}
+
+.full-checkbox{
+    display: flex;
+    gap: 1rem;
+}
+
+label{
+    background-color: var(pr);
+}
