@@ -1,10 +1,4 @@
-:root {
-    --primary-color: #130f0d;
-    --secondary-color: #551f22;
-    --primary-text-color:#c4c1b8;
-    --icon-colors:#635b51;
-    --secondary-text-color:#301415;
-}
+
 
 main{
     display: grid;
